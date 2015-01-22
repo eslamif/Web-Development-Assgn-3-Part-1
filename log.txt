@@ -1,1 +1,7 @@
-You log goes in this  file.
+Start: 
+End: 
+Tasks: 
+
+Start: Thu, 22 Jan 2015 12:35:13 -0800
+End: Thu, 22 Jan 2015 13:24:45 -0800
+Tasks: Read assignment instructions, cloned repository, added assignment files.

@@ -30,7 +30,22 @@ var barType = typeof bar;
 */
 
 //your code here
-
+bar = function(float) {
+	for(var i = 0; i < float.length; i++)
+		{
+			var beforeMul = float[i];			
+			float[i] *= 2;						//multiply every number in the array by 2
+			
+			//Verify each element in array can be doubled
+			if(beforeMul === float[i])			//if doubled and of same type
+				return true;
+			else
+				{
+					return false;
+					break;				
+				}
+		}
+}
 //end your code
 
 /**
