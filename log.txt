@@ -1,6 +1,13 @@
+git log --pretty=format:"Start: %nEnd: %ad %nTasks: %s" --date=rfc
+
 Start: 
 End: 
 Tasks: 
+________________________________________________________
+
+Start: Fri, 23 Jan 2015 09:35:56 -0800
+End: Fri, 23 Jan 2015 10:19:03 -0800
+Tasks: Completed func-useless & func-bar
 
 Start: Thu, 22 Jan 2015 12:35:13 -0800
 End: Thu, 22 Jan 2015 13:24:45 -0800
