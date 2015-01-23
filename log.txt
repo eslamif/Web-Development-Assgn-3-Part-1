@@ -5,9 +5,9 @@ End:
 Tasks: 
 ________________________________________________________
 
-Start: Fri, 23 Jan 2015 10:50:45 -0800
-End: Fri, 23 Jan 2015 13:27:36 -0800
-Tasks: Parse func WIP - posting for help
+Start: Fri, 23 Jan 2015 13:51:11 -0800
+End: Fri, 23 Jan 2015 14:24:41 -0800
+Tasks: Parse func completed
 
 Start: Fri, 23 Jan 2015 09:35:56 -0800
 End: Fri, 23 Jan 2015 10:19:03 -0800
