@@ -13,7 +13,9 @@
 */
 
 //your code here
-
+function uselessFunction() {
+	return null;
+}
 //end your code
 
 var bar = 'not a function';
@@ -31,20 +33,15 @@ var barType = typeof bar;
 
 //your code here
 bar = function(float) {
-	for(var i = 0; i < float.length; i++)
-		{
-			var beforeMul = float[i];			
-			float[i] *= 2;						//multiply every number in the array by 2
-			
-			//Verify each element in array can be doubled
-			if(beforeMul === float[i])			//if doubled and of same type
-				return true;
-			else
-				{
-					return false;
-					break;				
-				}
-		}
+	for(var i = 0; i < float.length; i++) {
+		var inputBeforeMul = float[i];
+		float[i] *= 2;		
+		
+		//Validate operation
+		if((inputBeforeMul * 2) != float[i] && float[i] !== barType)
+			return false;
+    }
+	return true;
 }
 //end your code
 
