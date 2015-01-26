@@ -5,6 +5,14 @@ End:
 Tasks: 
 ________________________________________________________
 
+Start: Sun, 25 Jan 2015 12:15:58 -0800
+End: Sun, 25 Jan 2015 14:10:03 -0800
+Tasks: objects.js WIP - struggling w/ understanding requirements
+
+Start: Fri, 23 Jan 2015 14:30:48 -0800
+End: Fri, 23 Jan 2015 15:35:45 -0800
+Tasks: Completed varMod, vaNull & VarIsString functions
+
 Start: Fri, 23 Jan 2015 13:51:11 -0800
 End: Fri, 23 Jan 2015 14:24:41 -0800
 Tasks: Parse func completed

@@ -10,7 +10,13 @@
 
 function returnObjectLiteral() {
   //your code here
-  return undefined; //Modify ONLY this line
+	var obj = {
+		type: "Goldfish",
+		brand: "Pepperidge Farm",
+		flavor: "Cheddar",
+		count: 2000
+	}
+	return obj;
   //end your code
 }
 
@@ -38,7 +44,12 @@ function returnObjectLiteral() {
 */
 
 //your code here
-
+function MessageLog(user) {
+	this.user = user;
+	logMessage() {
+		
+	}
+}
 //end your code
 
 /**
@@ -47,7 +58,9 @@ function returnObjectLiteral() {
 * received.
 */
 //your code here
-
+function lastReceivedMessage() {
+	
+}
 //end your code
 
 /**
