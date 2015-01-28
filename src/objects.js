@@ -44,12 +44,53 @@ function returnObjectLiteral() {
 */
 
 //your code here
-function MessageLog(user) {
+var MessageLog = function(user) {
 	this.user = user;
-	logMessage() {
+	this.messageBox = [];								//store user messages. 0 = most recent message
+	this.messageBoxCount = 0;							//total stored messages	
+	this.sentTotal = 0;									//total sent messages
+	this.receivedTotal = 0;								//total received messages
+	this.messLastReceived;								//last received message
+	this.messLastSent;									//last sent message
+	
+	this.logMessage = function(message, status) {
+		if(status == 1) {											//status 1 = received messages
+			this.messageBox.unshift([message, status]);
+			this.messLastReceived = message;
+			this.receivedTotal++;
+			this.messageBoxCount++;
+		}
+		else if(status == 0) {										//status 0 = sent messages
+			this.messageBox.unshift([message, status]);			
+			this.messLastSent = message;
+			this.sentTotal++;
+			this.messageBoxCount++;			
+		}
+		else {
+			this.messageBox.push(undefined);
+			this.messageBoxCount++;			
+		}
 		
+		//Only store 5 messages
+		if(this.messageBoxCount == 6) {										
+			this.messageBox.pop();
+			this.messageBoxCount--;
+		}	
+	}
+
+	this.getSentMessage = function(n) {
+		return this.messageBox[n][0];
+	}	
+	
+	this.totalSent = function() {
+		return this.sentTotal;
+	}
+	
+	this.totalReceived = function() {
+		return this.receivedTotal;
 	}
 }
+
 //end your code
 
 /**
@@ -58,8 +99,8 @@ function MessageLog(user) {
 * received.
 */
 //your code here
-function lastReceivedMessage() {
-	
+MessageLog.prototype.lastReceivedMessage = function() {
+	return this.messLastReceived;
 }
 //end your code
 
@@ -70,5 +111,8 @@ function lastReceivedMessage() {
 */
 
 //your code here
-
+var myLog = MessageLog("BlackHatGuy");
+myLog.logMessage("foo", 1);
+myLog.logMessage("bar", 1);
+myLog.logMessage("baz", 1);
 //end your code

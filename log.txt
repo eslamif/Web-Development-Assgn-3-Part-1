@@ -5,6 +5,14 @@ End:
 Tasks: 
 ________________________________________________________
 
+Start: WED, 28 Jan 2015 07:05:30 -0800
+End: WED, 28 Jan 2015 11:31:53 -0800
+Tasks: objects.js completed
+
+Start: TUE, 27 Jan 2015 09:01:51 -0800
+End: TUE, 27 Jan 2015 14:15:03 -0800
+Tasks: objects.js WIP
+
 Start: Sun, 25 Jan 2015 12:15:58 -0800
 End: Sun, 25 Jan 2015 14:10:03 -0800
 Tasks: objects.js WIP - struggling w/ understanding requirements
